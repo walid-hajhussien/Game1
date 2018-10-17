@@ -1,70 +1,121 @@
-
-body{
-  background-color: black;
-  color: white;
+.begin {
+  margin-top: 200px;
+  margin-left: 600px;
+  border-radius: 5px;
+  background-color: darkgray;
+  padding-top:40px;
+  padding-left:20px;
+  padding-bottom:20px;
+  width: 300px;
+  color: black;
+  border-style: solid;
+  height:280px;
 
 }
-table{
+#bs{
+  width: 90%;
+  padding-bottom:10px;
+  padding-top:10px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  cursor: pointer;
+
+}
+#bs:hover{
+  background-color: #45a049;
+}
+
+#name,#age{
+  margin-top:5px;
+  margin-bottom:8px;
+  padding:5px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 90%;
+
+}
+
+
+body {
+  background-image: url('pic/start.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+table {
   width: 1000px;
   height: 600px;
   border-style: solid;
   border-color: aliceblue;
-  border-width:1px;
-  margin-left:250px;
-  margin-top:50px;
-  padding-left:3px;
-  padding-right:3px;
-  padding-bottom:3px;
+  border-width: 1px;
+  margin-left: 250px;
+  margin-top: 50px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
   padding-top: 3px;
 }
-td{
-  border-style: solid;
-  border-width:1px;
-  width:300px;
-  height:300px;
 
+td {
+  border-style: solid;
+  border-width: 1px;
+  width: 300px;
+  height: 300px;
 }
-th{
+
+th {
   height: 20px;
 }
-img{
-  width:500px;
-  height:600px;
+
+img {
+  width: 500px;
+  height: 600px;
   margin-bottom: -5px;
 }
-.control{
-  border-style: solid;
-  border-width:1px;
-  width:120px;
-  padding-left:10px;
-  padding-bottom:15px;
-  padding-right:10px;
-  margin-left:700px;
-  margin-top:10px;
-  border-radius:25px;
-}
-.b0{
-  margin-bottom:5px;
-  margin-top:-15px;
-}
-#bg{
-  margin-left:40px;
-}
-.p1{
-  position:absolute;
-  top:70px;
-  height:50px;
-  width:50px;
-  border-style: solid;
-  border-width:1px;
-  border-color: aquamarine;
 
+.control {
+  border-style: solid;
+  border-width: 1px;
+  width: 120px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  margin-left: 700px;
+  margin-top: 10px;
+  border-radius: 25px;
 }
-#img1{
-    width: 100px;
-    height: 100px;
-    border-radius:50%;
+
+.b0 {
+  margin-bottom: 5px;
+  margin-top: -15px;
+  cursor: pointer;
 }
-marquee{
+
+#bg {
+  margin-left: 40px;
+}
+
+.p1 {
+  position: absolute;
+  top: 70px;
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: aquamarine;
+}
+
+#img1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+marquee {
   position: fixed;
+}
+
+.div1 {
+  position: ;
 }

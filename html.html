@@ -13,29 +13,49 @@
     <marquee id="m2"> <img id="img1" src="pic/over.png" alt=""> </marquee>
   </header>
   <main>
-    <table cellspacing="3">
-      <tr>
-        <th>First</th>
-        <th>Second</th>
-      </tr>
-      <tr>
-        <td> <p class="p1"></p> <img src="pic/1.png" alt=""> </td>
-        <td><img src="pic/1.1.png" alt=""> </td>
-      </tr>
-    </table>
-    <div class="control"><br><br>
-      <button class="b0"  type="button"  id="bl" name="button">&larr;</button>
-      <button class="b0"  type="button" id="br" name="button">&rarr;</button>
-      <button class="b0"  type="button" id="bu" name="button">&uarr;</button>
-      <button class="b0"  type="button" id="bd" name="button">&darr;</button>
-      <button class="b0"  type="button" id="bg" name="button">Go</button>
+    <div class="form1">
+    <marquee id="m3"> <img id="img1" src="pic/welcome.jpg" alt="welcome"></marquee>
+    <br><br><br>
+    <div class="begin">
+        <label id="l1" for="name"><b>Name</b></label><br>
+        <input id="name" type="text" placeholder="Your name.."><br><br>
+        <label for="age"><b>Age</b></label><br>
+        <input id="age" type="text" placeholder="Your Age.."><br><br><br>
+        <button id="bs" type="button" name="button"><b>Begin</b></button>
+        <p id="note1" style="color:red"></p>
+        <p id="note2" style="color:red"></p>
+        <p id="note3" style="color:green; text-align: center;"></p>
+
+    </div>
+    </div>
+    <div class="form2">
+      <table cellspacing="3">
+        <tr>
+          <th>First</th>
+          <th>Second</th>
+        </tr>
+        <tr>
+          <td>
+            <p class="p1"></p> <img src="pic/1.png" alt="">
+          </td>
+          <td><img src="pic/1.1.png" alt=""> </td>
+        </tr>
+      </table>
+
+      <div class="control"><br><br>
+        <button class="b0" type="button" id="bl" name="button">&larr;</button>
+        <button class="b0" type="button" id="br" name="button">&rarr;</button>
+        <button class="b0" type="button" id="bu" name="button">&uarr;</button>
+        <button class="b0" type="button" id="bd" name="button">&darr;</button>
+        <button class="b0" type="button" id="bg" name="button">Go</button>
+      </div>
     </div>
 
   </main>
   <footer>
-    <audio src="tick.mp3" ></audio>
-    <audio src="win.mp3" ></audio>
-    <audio src="sos.mp3" ></audio>
+    <audio id="tick" volume="0.0" src="tick.mp3"></audio>
+    <audio volume="0.1" src="win.mp3"></audio>
+    <audio volume="0.1" src="sos.mp3"></audio>
   </footer>
 
 
