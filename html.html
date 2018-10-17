@@ -9,8 +9,8 @@
 
 <body>
   <header>
-    <marquee id="m1"> <img id="img1" src="pic/win.gif" alt=""> </marquee>
-    <marquee id="m2"> <img id="img1" src="pic/over.png" alt=""> </marquee>
+    <marquee id="m1"> <img id="img1" src="pic/yes.jpg" alt=""> </marquee>
+    <marquee id="m2"> <img id="img2" src="pic/no.png" alt=""> </marquee>
   </header>
   <main>
     <div class="form1">
@@ -31,14 +31,28 @@
     <div class="form2">
       <table cellspacing="3">
         <tr>
-          <th>First</th>
-          <th>Second</th>
+          <th class="th1">Level</th>
+          <th class="th1">Found</th>
+          <th class="th1">Timer</th>
+          <th class="th1">Name</th>
         </tr>
         <tr>
-          <td>
-            <p class="p1"></p> <img src="pic/1.png" alt="">
+          <td class="td2" id="v1">1</td>
+          <td class="td2" id="v2">1</td>
+          <td class="td2" id="v3">1</td>
+          <td class="td2" id="v4">1</td>
+        </tr>
+        <tr id="th">
+          <th class="th2" colspan="2">First</th>
+          <th class="th2" colspan="2">Second</th>
+        </tr>
+        <tr>
+          <td class="td1" colspan="2">
+            <p class="p1"></p>
+            <img id="imgp1" class="picImge" src="pic/1.png" alt="">
           </td>
-          <td><img src="pic/1.1.png" alt=""> </td>
+          <td class="td1" colspan="2">
+            <img id="imgp2" class="picImge" src="pic/1.1.png" alt=""> </td>
         </tr>
       </table>
 
@@ -47,15 +61,15 @@
         <button class="b0" type="button" id="br" name="button">&rarr;</button>
         <button class="b0" type="button" id="bu" name="button">&uarr;</button>
         <button class="b0" type="button" id="bd" name="button">&darr;</button>
-        <button class="b0" type="button" id="bg" name="button">Go</button>
+        <button class="b1" type="button" id="bg" name="button">Go</button>
       </div>
     </div>
 
   </main>
   <footer>
-    <audio id="tick" volume="0.0" src="tick.mp3"></audio>
-    <audio volume="0.1" src="win.mp3"></audio>
-    <audio volume="0.1" src="sos.mp3"></audio>
+    <audio id="tick" volume="0.0" src="sound/tick.mp3"></audio>
+    <audio volume="0.1" src="sound/yes.mp3"></audio>
+    <audio volume="0.1" src="sound/no.mp3"></audio>
   </footer>
 
 
