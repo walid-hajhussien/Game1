@@ -101,6 +101,7 @@ $('document').ready(function() {
 
 
   $('#br').click(function() {
+    $('#img1,#img2').hide();
     $('audio').get(0).play();
     $('.control').css('background-color', 'darkgray')
     $('#th').css('background-color', 'black')
@@ -115,6 +116,7 @@ $('document').ready(function() {
   })
 
   $('#bl').click(function() {
+    $('#img1,#img2').hide();
     $('audio').get(0).play();
     $('.control').css('background-color', 'darkgray')
     $('#th').css('background-color', 'black')
@@ -129,6 +131,7 @@ $('document').ready(function() {
   })
 
   $('#bd').click(function() {
+    $('#img1,#img2').hide();
     $('audio').get(0).play();
     $('.control').css('background-color', 'darkgray')
     $('#th').css('background-color', 'black')
@@ -143,6 +146,7 @@ $('document').ready(function() {
   })
   //up button 113-660 px 547
   $('#bu').click(function() {
+    $('#img1,#img2').hide();
     $('audio').get(0).play();
     $('.control').css('background-color', 'darkgray')
     $('#th').css('background-color', 'black')
@@ -186,16 +190,24 @@ $('document').ready(function() {
     }
     if (found === 3) {
       level++;
-      $('#v1').text(level);
-      found=0;
-      $('#v2').text(found);
-      x1=x2=x3=0;
-      $('#imgp1').attr('src', firstImage[level])
-      $('#imgp2').attr('src', secondImage[level])
-      $('#th').css('background-color', 'black')
-      $('.control').css('background-color', 'black')
-      $('#img1,#img2').hide();
+      if (level > firstImage.length) {
+        $('.form2').hide();
+        $('#img1,#img2').hide();
 
+        $('body').css('background-image', 'url(pic/end.gif)')
+      } else {
+        $('#v1').text(level);
+        found = 0;
+        $('#v2').text(found);
+        x1 = x2 = x3 = 0;
+        $('#imgp1').attr('src', firstImage[level - 1])
+        $('#imgp2').attr('src', secondImage[level - 1])
+        $('.p1').css('top', '113px')
+        $('.p1').css('left', '267px')
+        $('#th').css('background-color', 'black')
+        $('.control').css('background-color', 'black')
+        $('#img1,#img2').hide();
+      }
     }
 
   })
@@ -239,12 +251,12 @@ function addImage(url1, url2, top1, top2, top3, left1, left2, left3) {
   direction.push(obj)
 }
 addImage('pic/1.png', 'pic/1.1.png', '140.35px', '222.4px', '249.75px', '400.2px', '711px', '355.8px')
-addImage('pic/2.png', 'pic/2.1.png')
-addImage('pic/3.png', 'pic/3.1.png')
+addImage('pic/2.png', 'pic/2.1.png', '167.7px', '304.45px', '249.75px', '533.4px', '622.2px', '311.4px')
+addImage('pic/3.png', 'pic/3.1.png', '304.45px', '468.55px', '660px', '400.2px', '489px', '622.2px')
 
 //Random function
 function randomImage() {
   return Math.floor(Math.random() * firstImage.length);
 }
 
-// left(267)   top(70) 613
+// top1 ='167.7px'    top2='304.45px'      top3='249.75px'      left1='533.4px'    left2='622.2px'  left3='311.4px'
